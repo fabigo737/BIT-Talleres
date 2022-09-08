@@ -1,14 +1,23 @@
-.grid{
+.header {grid-area: header;}
+.menu {grid-area: menu;}
+.main {grid-area: main;}
+.right {grid-area: right;}
+.footer{grid-area: footer;}
+
+.page {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    background-color: aqua;
+    grid-template-areas: 
+    'header header header header header'
+    'menu main main main right'
+    'menu footer footer footer footer';
     background-color: gray;
-    padding: 50px;
-    gap: 20px;
+    gap: 2px;
 }
 
-.grid div{
-    background-color: aqua;
-    border: 1px solid black;
-    padding: 20px;
+.page div{
+    border: 1px solid;
+    background-color: white;
     text-align: center;
 }
+
