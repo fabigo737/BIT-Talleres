@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Talleres</title>
+    <script src="https://kit.fontawesome.com/676ee9172b.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
         body {
@@ -23,14 +24,15 @@
             text-align: center;
             font-family: 'Caveat', cursive;
             font-size: 50px;
-            color: white;
+            color: #979797;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
         }
 
         a{
-            color: #f5f5f5;
+            color: #979797;
             text-decoration: none;
+            font-size: 20px
         }
 
         .flexbox{
@@ -38,6 +40,7 @@
             background-color: rgba(0, 0, 0, 0.3);
             gap: 12px;
             flex-direction: column;
+            backdrop-filter: blur(2px);
 
         }
 
@@ -49,15 +52,28 @@
             transition: 0.3s;
         }
 
+        .flexbox a:nth-child(3){
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
         .flexbox a:hover{
             background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .github{
+            text-align: center;
+            background-color: gray;
+            max-width: 120px;
+            position: relative;
+            float: ;
         }
 
         footer{
             text-align: center;
-            margin-top: 10px;
-            font-size: smaller;
-            color: #f5f5f5;
+            color: #000000;
+            margin-top: 5%;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -70,9 +86,10 @@
         <div class="item2">item2</div> -->
         <a href="/Taller cssgrid/">Taller CSS Grid</a>
         <a href="/Taller Flexbox/">Taller Flexbox</a>
+        <a href="https://github.com/fabigo737/BIT-Talleres"><i class="fa-brands fa-github"></i>Ver en GitHub<i class="fa-brands fa-github"></i></a>
     </div>
-
-    <footer>Creado usando Flexbox</footer>
+    <footer>
+        Creado usando HTML y CSS Flexbox</footer>
 </body>
 
 </html>
