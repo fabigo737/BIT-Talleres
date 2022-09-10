@@ -1,9 +1,16 @@
+body{
+    width: 500px;
+}
+
 .flexbox{
     display: flex;
     flex-wrap: wrap;
     border: 1px solid;
     background-color: gray;
     justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 10px;
+    
 }
 
 .flexbox *{
@@ -13,6 +20,7 @@
     padding: 93px;
 }
 
-.item3 {
-    flex-basis: 300px;
-}
+.item1 { flex: 1 0 0; }
+.item2 { flex: 1 0 0; }
+.item3 { flex: 1 0 0; }
+.item4 { flex: 1 0 0; }
