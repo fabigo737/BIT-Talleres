@@ -1,0 +1,18 @@
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    background-color: gray;
+    justify-content: space-evenly;
+}
+
+.flexbox *{
+    color: green;
+    background-color: white;
+    border: 1px solid magenta;
+    padding: 93px;
+}
+
+.item3 {
+    flex-basis: 300px;
+}
