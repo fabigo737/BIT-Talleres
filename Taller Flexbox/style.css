@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-image: url(imgs/bg/a.jpg);
 }
 
 
-header{
+header {
     text-align: center;
     background-color: rgba(18, 47, 110, 0.541);
     color: white;
@@ -18,7 +18,7 @@ header{
     margin-bottom: 50px;
 }
 
-.flexbox{
+.flexbox {
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(230, 230, 230, 0.2);
@@ -29,22 +29,22 @@ header{
     width: 50%;
     translate: 50%;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     align-items: center;
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
-    
+
 }
 
-.flexbox *{
+.flexbox * {
     color: green;
     background-color: white;
     border: 1px solid magenta;
     text-align: center;
 
-    
+
 }
 
-.break{
+.break {
     flex: 100%;
     border: 0;
 }
@@ -63,9 +63,9 @@ header{
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
 }
 
-.item1 >*{
+.item1>* {
     padding: 30px;
-    
+
 }
 
 .item2 {
@@ -81,7 +81,7 @@ header{
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
 }
 
-.item2 >*{
+.item2>* {
     padding: 50px;
     border-radius: 15px;
 }
@@ -98,7 +98,7 @@ header{
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
 }
 
-.item3 >*{
+.item3>* {
     padding: 15px;
     border-radius: 15px;
 }
@@ -113,7 +113,7 @@ header{
 }
 
 
-footer{
+footer {
     margin-top: 60px;
     text-align: center;
     color: white;
@@ -129,24 +129,30 @@ footer{
 
 @media (max-width: 700px) {
 
-    .flexbox{
+    body {
+        background-image: url(imgs/bg/c.jpg);
+    }
+
+
+    .flexbox {
         flex-direction: column;
         width: 100%;
         translate: 0%;
         padding: 0px;
     }
 
-    .item1, .item3 {
+    .item1,
+    .item3 {
         flex: 100%;
         display: flex;
         flex-direction: column;
         border-radius: 0px;
-        justify-content: space-evenly;
     }
-    
-    .item1 >* , .item3 >*{
+
+    .item1>*,
+    .item3>* {
         padding: 30px 25rem;
-        
+
     }
 
     .mobile {
@@ -154,5 +160,4 @@ footer{
     }
 
 
-    }
-    
+}
