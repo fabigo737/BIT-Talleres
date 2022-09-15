@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+}
+
+.bgfabian {
+    background: #5A2785;
+    background: -webkit-linear-gradient(bottom left, #5A2785, #4FA9C3);
+    background: -moz-linear-gradient(bottom left, #5A2785, #4FA9C3);
+    background: linear-gradient(to top right, #5A2785, #4FA9C3);
+
+}
+
+.bgfabianlines {
+    background-image: url(https://www.wowpatterns.com/assets/files/resource_images/diagonal-lines-vector-pattern.jpg);
+    mix-blend-mode: multiply;
+    background-size: 10px;
+    background-repeat: repeat;
+    height: 1080px;
+    z-index: 1;
+}
+
+.indexfabian {
+    z-index: 3;
+}
+
+.logobit img {
+    max-width: 80%;
+}
